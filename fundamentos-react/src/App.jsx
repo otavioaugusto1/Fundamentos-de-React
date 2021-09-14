@@ -11,7 +11,9 @@ import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 import ParOuImpar from "./components/condicional/ParOuImpar";
-
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
+import DiretaPai from "./components/comunicacao/DiretaPai";
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
 // export default function App(props){}
 
 
@@ -19,8 +21,18 @@ export default props =>
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+            <Card titulo=" #10 - Comunicação indireta" color="#8BAD39">
+                <IndiretaPai>
+
+                </IndiretaPai>
+            </Card>
+            <Card titulo=" #09 - Comunicação direta" color="#59322C">
+                <DiretaPai></DiretaPai>
+            </Card>
             <Card titulo=" #08 - Renderização condicional" color="#982395">
-                <ParOuImpar numero = {20}></ParOuImpar>
+                <ParOuImpar numero={20}></ParOuImpar>
+                <UsuarioInfo usuario={{ nome: "otávio" }}></UsuarioInfo>
+                <UsuarioInfo usuario={{ nome: "otávio@.com" }}></UsuarioInfo>
             </Card>
             <Card titulo=" #07 - Desafio de repetição com produtos" color="#3A9AD9">
                 <TabelaProdutos>
