@@ -14,6 +14,8 @@ import ParOuImpar from "./components/condicional/ParOuImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
+import Input from "./components/formulario/Input";
+import Contador from "./components/contador/Contador";
 // export default function App(props){}
 
 
@@ -21,6 +23,12 @@ export default props =>
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+            <Card titulo=" #06 - Repetição" color="#424242">
+                <Contador valorInicial = {10}></Contador>
+            </Card>
+            <Card titulo=" #11 - Componente controlado" color="#E45E56">
+                <Input></Input>
+            </Card>
             <Card titulo=" #10 - Comunicação indireta" color="#8BAD39">
                 <IndiretaPai>
 
